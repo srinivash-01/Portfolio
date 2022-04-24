@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.28eb5943.chunk.css",
+    "main.js": "/Portfolio/static/js/main.6319e155.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.6319e155.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.261db112.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.261db112.js.map",
+    "static/css/2.cbd1ac0e.chunk.css": "/Portfolio/static/css/2.cbd1ac0e.chunk.css",
+    "static/js/2.b6dcf60d.chunk.js": "/Portfolio/static/js/2.b6dcf60d.chunk.js",
+    "static/js/2.b6dcf60d.chunk.js.map": "/Portfolio/static/js/2.b6dcf60d.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/2.cbd1ac0e.chunk.css.map": "/Portfolio/static/css/2.cbd1ac0e.chunk.css.map",
+    "static/css/main.28eb5943.chunk.css.map": "/Portfolio/static/css/main.28eb5943.chunk.css.map",
+    "static/js/2.b6dcf60d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b6dcf60d.chunk.js.LICENSE.txt",
+    "static/media/Calc.cc4f4022.png": "/Portfolio/static/media/Calc.cc4f4022.png",
+    "static/media/Drum.fd184f30.png": "/Portfolio/static/media/Drum.fd184f30.png",
+    "static/media/Ecommerce.c272cd81.png": "/Portfolio/static/media/Ecommerce.c272cd81.png",
+    "static/media/Resume.64895a73.pdf": "/Portfolio/static/media/Resume.64895a73.pdf",
+    "static/media/Ticketbooker.f03b6407.png": "/Portfolio/static/media/Ticketbooker.f03b6407.png",
+    "static/media/tindog.f676eb2b.png": "/Portfolio/static/media/tindog.f676eb2b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.261db112.js",
+    "static/css/2.cbd1ac0e.chunk.css",
+    "static/js/2.b6dcf60d.chunk.js",
+    "static/css/main.28eb5943.chunk.css",
+    "static/js/main.6319e155.chunk.js"
+  ]
+}
