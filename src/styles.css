@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  height: 100% !important;
+}
+
+#root {
+  height: 100%;
+}
+.pro-sidebar
+  .pro-menu.shaped
+  .pro-menu-item
+  > .pro-inner-item
+  > .pro-icon-wrapper {
+  background-color: #1d1d1d !important;
+}

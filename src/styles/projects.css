@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+.backpic-About {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
+.Name {
+  font-family: "Russo One", sans-serif;
+  background-color: #000;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.role {
+  font-family: "Bungee", cursive;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  padding: 2%;
+  width: fit-content;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px px;
+  margin-top: 0px;
+}
+.row {
+  --bs-gutter-x: 0px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.backpic1 {
+  background-image: url("https://images.unsplash.com/photo-1580928890859-93390992f0d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGJyb3duJTIwc2hhZGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.Name1 {
+  font-family: "Russo One", sans-serif;
+  background-color: #de3926;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.left-half {
+  text-align: end !important;
+}
+
+.About-hr {
+  text-align: center;
+  width: 110px;
+  height: 3px !important;
+  background-color: #fb0303;
+  margin-left: 10%;
+  opacity: 100% !important;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #de3926;
+  border-color: #535e68;
+}
+
+.Hire-me:hover {
+  color: #fff;
+  text-shadow: none;
+  background: #de3926;
+}
+
+/* responsdive */
+
+.col-main {
+  flex: 1;
+}
+
+.col-complementary {
+  flex: 1;
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+  }
+}
+
+/* etc */
+
+.container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.whatcai_icons:hover {
+  color: #fb0303;
+}
+
+/* Skills */
+
+.skills {
+  padding: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title {
+  color: #000;
+  font-weight: 700;
+}
+
+.progress-bar {
+  background: #fff;
+  border-radius: 3px;
+  width: 100%;
+  height: 15px;
+  margin-top: 5px;
+  /*   overflow: hidden; */
+}
+
+#html .progress {
+  max-width: 90%;
+  height: 100%;
+  background: #ed2828;
+  border-radius: 3px;
+  position: relative;
+  animation: 3s ease 0s 1 loadBars;
+}
+
+#html .progress::after {
+  content: "90%";
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 14px;
+  text-align: center;
+  height: 32px;
+  width: 36px;
+  background: #ed2828;
+  position: absolute;
+  padding: 1px 7px;
+  border-radius: 4px;
+  right: -3px;
+  z-index: 2;
+  top: 0px;
+}
+
+#html .progress::before {
+  content: "0%";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+#css .progress {
+  max-width: 70%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 3s ease 0s 1 loadBars;
+}
+
+#css .progress::after {
+  content: "70%";
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 14px;
+  text-align: center;
+  height: 32px;
+  width: 36px;
+  background: #ed2828;
+  position: absolute;
+  padding: 1px 7px;
+  border-radius: 4px;
+  right: -3px;
+  z-index: 2;
+  top: 0px;
+}
+
+#css .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+#js .progress {
+  max-width: 60%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 3s ease 0s 1 loadBars;
+}
+
+#js .progress::after {
+  content: "60%";
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 14px;
+  text-align: center;
+  height: 32px;
+  width: 36px;
+  background: #ed2828;
+  position: absolute;
+  padding: 1px 7px;
+  border-radius: 4px;
+  right: -3px;
+  z-index: 2;
+  top: 0px;
+}
+
+#js .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+@keyframes loadBars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* when the screen is 768px or wider,
+  turn it into a flexbox */
+  .row {
+    display: flex;
+  }
+  .col {
+    flex-grow: 1;
+  }
+}
+
+/* card */
+.card1 {
+  width: 220px;
+  height: 130px;
+}
+.card {
+  position: relative;
+
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s linear;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 3rem;
+  right: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-category {
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin: 15px;
+  color: #000;
+}
+
+i {
+  margin-left: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover .card-content {
+  right: 0;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}

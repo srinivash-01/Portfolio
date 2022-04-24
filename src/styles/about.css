@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+.backpic-About {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
+.Name {
+  font-family: "Russo One", sans-serif;
+  background-color: #000;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.role {
+  font-family: "Bungee", cursive;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  padding: 2%;
+  width: fit-content;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px px;
+  margin-top: 0px;
+}
+.row {
+  --bs-gutter-x: 0px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.backpic1 {
+  background-image: url("https://images.unsplash.com/photo-1580928890859-93390992f0d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGJyb3duJTIwc2hhZGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.Name1 {
+  font-family: "Russo One", sans-serif;
+  background-color: #de3926;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.left-half {
+  text-align: end !important;
+}
+
+.About-hr {
+  text-align: center;
+  width: 110px;
+  height: 3px !important;
+  background-color: #fb0303;
+  margin-left: 10%;
+  opacity: 100% !important;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #de3926;
+  border-color: #535e68;
+}
+
+.Hire-me:hover {
+  color: #fff;
+  text-shadow: none;
+  background: #de3926;
+}
+
+/* responsdive */
+
+.col-main {
+  flex: 1;
+}
+
+.col-complementary {
+  flex: 1;
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+  }
+}
+
+/* etc */
+
+.container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.whatcai_icons:hover {
+  color: #fb0303;
+}
+
+/* new card */
+
+.card0 {
+  width: 190px;
+  height: 254px;
+  background: #f5f5f5;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30%;
+}
+
+.card0-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0em;
+  padding: 0 1rem;
+}
+
+.card0-img {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  margin-left: 23%;
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.card0-img::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 0px solid #e8e8e8;
+}
+
+/*Text*/
+.text-title {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #42caff;
+  letter-spacing: 0.05rem;
+}
+
+.text-body {
+  font-size: 0.8em;
+  text-align: center;
+  color: #6f6d78;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Hover*/
+.card0:hover .card0-img {
+  --size: 110px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.card0:hover .icon_tile {
+  color: #fff;
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.icon_tile {
+  margin-top: 5%;
+  height: 80% !important;
+  width: 80% !important;
+  color: #000;
+}
+
+/*===================*/
+/* BOUNCE OUT
+/*===================*/
+
+.bounce-out-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.bounce-out-on-hover:hover,
+.bounce-out-on-hover:focus,
+.bounce-out-on-hover:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}

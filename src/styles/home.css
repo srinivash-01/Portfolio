@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+.backpic {
+  background-image: url("https://images.unsplash.com/photo-1580928891584-0d36b37ae981?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
+.Name {
+  font-family: "Russo One", sans-serif;
+  background-color: #000;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.role {
+  font-family: "Bungee", cursive;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  padding: 2%;
+  width: fit-content;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px px;
+  margin-top: 0px;
+}
+.row {
+  --bs-gutter-x: 0px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.backpic1 {
+  background-image: url("https://images.unsplash.com/photo-1580928890859-93390992f0d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGJyb3duJTIwc2hhZGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.Name1 {
+  font-family: "Russo One", sans-serif;
+  background-color: #de3926;
+  color: #fdeff4;
+  font-size: 50px;
+  padding: 3%;
+  width: fit-content;
+}
+.left-half {
+  text-align: end !important;
+}
