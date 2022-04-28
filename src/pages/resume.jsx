@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/resume.css";
-
+import Left from "../images/normal.jpg";
 export default function Resume() {
   const [isDesktop, setIsDesktop] = useState(false);
   function MediaQuery() {
@@ -63,7 +63,7 @@ export default function Resume() {
         {isDesktop ? (
           <div
             class="col backpic1 left-half "
-            style={{ textAlign: "end" }}
+             style={{ textAlign: "end", backgroundImage: `url(${Left})` }}
           ></div>
         ) : null}
 

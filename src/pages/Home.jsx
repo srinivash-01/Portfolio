@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import Link from '@material-ui/core/Link';
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LocalPostOfficeIcon from "@mui/icons-material/LocalPostOffice";
@@ -7,10 +8,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Tooltip from "react-simple-tooltip";
 import "../styles/home.css";
-
+import Left from "../images/left.png";
 import { slideInUp, slideInLeft, slideInDown } from "react-animations";
 import Radium, { StyleRoot } from "radium";
-
+import Yearkad from "../images/yearkad.png";
+import Bike from "../images/normal.jpg";
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   function MediaQuery() {
@@ -57,12 +59,20 @@ export default function Home() {
       paddingBottom: "2%"
     }
   };
+  function sendMail() {
+    var link ="mailto:srinigunasekaran@gmail.com";
+    window.location.href = link;
+  }
 
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <div class="row" style={{ width: "100%", height: "100%" }}>
         {isDesktop ? (
-          <div class="col backpic1 left-half " style={{ textAlign: "end" }}>
+          <div class="col backpic1 left-half " style={{
+              textAlign: "end",
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)), url(${Bike})`
+            }}>
             <StyleRoot>
               <div
                 style={{
@@ -81,7 +91,13 @@ export default function Home() {
         ) : null}
 
         <div class="col" style={{ height: "100%" }}>
-          <div className="backpic" style={{ width: "100%", height: "100%" }}>
+          <div className="backpic" style={{
+              width: "100%",
+              height: "100%",
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)), url(${Yearkad})`,
+              backgroundColor: "black"
+            }}>
             <MediaQuery />
             <div style={{ paddingTop: "25%" }}>
               <StyleRoot>
@@ -114,6 +130,7 @@ export default function Home() {
               >
                 <div style={icons.slideInLeft}>
                   <Tooltip content="Facebook">
+                  <Link href="https://www.facebook.com/profile.php?id=100011764804290">
                     <FacebookIcon
                       style={{
                         backgroundColor: "#EEEEEE",
@@ -123,8 +140,10 @@ export default function Home() {
                         color: "#3b5998"
                       }}
                     />
+                    </Link>
                   </Tooltip>
                   <Tooltip content="Twitter">
+                  <Link href="https://twitter.com/srini224">
                     <TwitterIcon
                       style={{
                         backgroundColor: "#EEEEEE",
@@ -134,8 +153,10 @@ export default function Home() {
                         color: "#00acee"
                       }}
                     />
+                    </Link>
                   </Tooltip>
                   <Tooltip content="Mail">
+                  <Link onClick={sendMail}>
                     <LocalPostOfficeIcon
                       style={{
                         backgroundColor: "#EEEEEE",
@@ -145,8 +166,10 @@ export default function Home() {
                         color: "#bb001b"
                       }}
                     />
+                    </Link>
                   </Tooltip>
                   <Tooltip content="LinkedIn">
+                  <Link href="https://www.linkedin.com/in/srinivash-g-a68973221/">
                     <LinkedInIcon
                       style={{
                         backgroundColor: "#EEEEEE",
@@ -156,8 +179,10 @@ export default function Home() {
                         color: "#00acee"
                       }}
                     />
+                    </Link>
                   </Tooltip>
                   <Tooltip content="Instagram">
+                  <Link href="https://www.instagram.com/srinivash_g/">
                     <InstagramIcon
                       style={{
                         backgroundColor: "#EEEEEE",
@@ -167,6 +192,7 @@ export default function Home() {
                         color: "#3f729b"
                       }}
                     />
+                    </Link>
                   </Tooltip>
                 </div>
               </div>

@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "http://srinivash-01.github.io/Portfolio",
+  "homepage": "http://srinivash-01.github.io",
   "dependencies": {
     "@deepdub/react-ok-tooltip": "0.1.4",
     "@emotion/react": "11.9.0",

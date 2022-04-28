@@ -4,7 +4,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import GTranslateIcon from "@mui/icons-material/GTranslate";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 import IosShareIcon from "@mui/icons-material/IosShare";
-
+import Yearkad from "../images/yearkad.png";
 import "../styles/about.css";
 
 export default function Contact() {
@@ -92,7 +92,7 @@ export default function Contact() {
         {isDesktop ? (
           <div
             class="col backpic1 left-half "
-            style={{ textAlign: "end" }}
+            style={{ textAlign: "end", backgroundImage: `url(${Yearkad})` }}
           ></div>
         ) : null}
 
@@ -157,13 +157,15 @@ export default function Contact() {
                 </h6>
 
                 <p style={{ fontSize: "80%" }}>
-                  <a href="www.linkedin.com/in/srinivash-g">
-                    www.linkedin.com/{!isDesktop ? <br /> : null}in /srinivash-g
+                  <a href="https://www.linkedin.com/in/srinivash-g-a68973221/">
+                    Srinivash_g
                   </a>
                 </p>
-              </div>
 
-              <hr style={{ marginTop: "15%" }} />
+              </div>
+              <p style={{ marginTop: "5%" }}>Want to chat? Feel free to drop me a message📝</p>
+              <hr style={{ marginTop: "10%" }} />
+
               <h1 style={isDesktop ? whatcani : AboutMob}>GET IN TOUCH</h1>
               <hr style={isDesktop ? whatcani_hr : hrlineMob} />
 

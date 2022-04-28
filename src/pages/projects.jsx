@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/projects.css";
-import project from "../Datas/projects";
-
+import projects from "../Datas/projects";
+import Normal from "../images/lite.png";
 export default function Projects() {
   const [isDesktop, setIsDesktop] = useState(false);
+  const [filteredProject, setProject] = useState(projects);
   function MediaQuery() {
     useEffect(() => {
       const media = window.matchMedia("(min-width: 700px)");
@@ -17,7 +18,17 @@ export default function Projects() {
 
     return <div className="App">{isDesktop ? null : null}</div>;
   }
-
+    function ReactJS() {
+      const filteredList = projects.filter((project) => project.type === "ReactJS");
+      setProject(filteredList);
+    }
+    function ExpressJS() {
+        const filteredList = projects.filter((project) => project.type === "ExpressJS");
+        setProject(filteredList);
+      }
+      function All() {
+          setProject(projects);
+        }
   const About = {
     paddingTop: "10%",
     paddingLeft: "10%"
@@ -53,7 +64,7 @@ export default function Projects() {
         {isDesktop ? (
           <div
             class="col backpic1 left-half "
-            style={{ textAlign: "end" }}
+            style={{ textAlign: "end", backgroundImage: `url(${Normal})` }}
           ></div>
         ) : null}
 
@@ -71,12 +82,12 @@ export default function Projects() {
             <hr style={isDesktop ? hrline : hrlineMob} />
             <div style={{ padding: "10%", paddingTop: "0px" }}>
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <button class="btn btn-secondary">All</button>
-                <button class="btn btn-secondary">ReactJS</button>
-                <button class="btn btn-secondary">ExpressJS</button>
+                <button class="btn btn-secondary" onClick={All}>All</button>
+                <button class="btn btn-secondary" onClick={ReactJS}>ReactJS</button>
+                <button class="btn btn-secondary" onClick={ExpressJS}>ExpressJS</button>
               </div>
               <div class="row">
-                {project.map((result) => {
+                {filteredProject.map((result) => {
                   return (
                     <div class="col">
                       <div class="card card1">

@@ -11,9 +11,13 @@ import { Card } from "react-bootstrap";
 import AttractionsIcon from "@mui/icons-material/Attractions";
 import Resume from "../resume/Resume.pdf";
 import "../styles/about.css";
-
+import Lite from "../images/lite.png";
+import Link from '@material-ui/core/Link';
 export default function About() {
   const [isDesktop, setIsDesktop] = useState(false);
+  function navigate_to_linkedin(){
+    window.location.replace('www.linkedin.com/in/srinivash-g');
+  }
   function MediaQuery() {
     useEffect(() => {
       const media = window.matchMedia("(min-width: 700px)");
@@ -75,7 +79,7 @@ export default function About() {
         {isDesktop ? (
           <div
             class="col backpic1 left-half "
-            style={{ textAlign: "end" }}
+            style={{ textAlign: "end", backgroundImage: `url(${Lite})` }}
           ></div>
         ) : null}
 
@@ -148,8 +152,8 @@ export default function About() {
                 </h6>
 
                 <p style={{ fontSize: "80%" }}>
-                  <a href="www.linkedin.com/in/srinivash-g">
-                    www.linkedin.com/{!isDesktop ? <br /> : null}in /srinivash-g
+                  <a href="https://www.linkedin.com/in/srinivash-g-a68973221/">
+                    Srinivash-g
                   </a>
                 </p>
               </div>
@@ -166,6 +170,7 @@ export default function About() {
                 JavaScript web server.
               </p>
               <p>
+              <Link href="/Contact">
                 <button
                   type="button"
                   class="btn btn-dark btn-lg Hire-me"
@@ -173,6 +178,7 @@ export default function About() {
                 >
                   HIRE ME
                 </button>
+                </Link>
 
                 <a
                   class="btn btn-outline-dark btn-lg"
