@@ -26,6 +26,10 @@ export default function Projects() {
         const filteredList = projects.filter((project) => project.type === "ExpressJS");
         setProject(filteredList);
       }
+      function MERN() {
+        const filteredList = projects.filter((project) => project.type === "MERN");
+        setProject(filteredList);
+      }
       function All() {
           setProject(projects);
         }
@@ -85,6 +89,7 @@ export default function Projects() {
                 <button class="btn btn-secondary" onClick={All}>All</button>
                 <button class="btn btn-secondary" onClick={ReactJS}>ReactJS</button>
                 <button class="btn btn-secondary" onClick={ExpressJS}>ExpressJS</button>
+                <button class="btn btn-secondary" onClick={MERN}>MERN</button>
               </div>
               <div class="row">
                 {filteredProject.map((result) => {
