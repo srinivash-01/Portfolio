@@ -3,6 +3,8 @@ import tindog from "../images/tindog.png";
 import Calc from "../images/Calc.png";
 import Ecommerce from "../images/Ecommerce.png";
 import Ticketbooker from "../images/Ticketbooker.png";
+import Twitter_Clone from "../images/twitter_clone.png";
+import Royal_Opticals from "../images/royal_opticals.png";
 const project = [
   {
     type: "ExpressJS",
@@ -33,7 +35,18 @@ const project = [
     title: "TICKET BOOKER",
     href: "https://i4f6yf.csb.app/",
     image: Ticketbooker
+  },{
+    type: "ReactJS",
+    title: "TWITTER CLONE",
+    href: "https://twitter-cl.netlify.app/",
+    image: Twitter_Clone
+  },{
+    type: "MERN",
+    title: "ECOMMERCE WEBSITE FOR OPTICALS SHOP",
+    href: "https://royalopticalshop.vercel.app/",
+    image: Royal_Opticals
   }
+  
 ];
 
 export default project;
